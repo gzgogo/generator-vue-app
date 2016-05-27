@@ -17,7 +17,7 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "^0.22.0",
+    "yeoman-generator": "0.22.0",
     "chalk": "^1.0.0",
     "deep-extend": "^0.4.1",
     "fs": "0.0.2",
