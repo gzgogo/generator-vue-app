@@ -76,9 +76,12 @@ module.exports = yeoman.Base.extend({
     );
 
     if (!!this.props.stylesheetExtension) {
-      this.fs.copy(
+      this.fs.copyTpl(
         this.templatePath('component.stylesheet'),
-        this.destinationPath(stylesheetFullPath)
+        this.destinationPath(stylesheetFullPath),
+        {
+          componentName: componentName
+        }
       );
     }
   }

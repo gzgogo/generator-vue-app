@@ -3,8 +3,8 @@
 </style>
 
 <template>
-     <div class="<%= componentName %>">
-      </div>
+  <div class="<%= componentName %>">
+  </div>
 </template>
 
 <script>
