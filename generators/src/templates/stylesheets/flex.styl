@@ -1,0 +1,103 @@
+//flex
+flex-layout()
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+flex(n)
+  -moz-box-flex: n;
+  -ms-box-flex: n;
+  -webkit-box-flex: n;
+  /*for ipad*/
+  -webkit-flex: n;
+  flex: n;
+
+flex-horizontal-left()
+  -webkit-box-pack: start;
+  -webkit-flex-pack: start;
+  -webkit-justify-content: start;
+  -moz-justify-content: start;
+  -ms-justify-content: start;
+  -o-justify-content: start;
+  /*for ipad*/
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+
+flex-horizontal-center()
+  -webkit-box-pack: center;
+  -webkit-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+
+flex-horizontal-right()
+  -webkit-box-pack: end;
+  -webkit-flex-pack: end;
+  -webkit-justify-content: end;
+  -moz-justify-content: end;
+  -ms-justify-content: end;
+  -o-justify-content: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+
+flex-vertical-top()
+  /* 09版 */
+  -webkit-box-align: start;
+  /* 12版 */
+  -webkit-align-items: start;
+  -moz-align-items: start;
+  -ms-align-items: start;
+  -o-align-items: start;
+  align-items: start;
+
+flex-vertical-center()
+  /* 09版 */
+  -webkit-box-align: center;
+  /* 12版 */
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+
+flex-vertical-center()
+  /* 09版 */
+  -webkit-box-align: end;
+  /* 12版 */
+  -webkit-align-items: end;
+  -moz-align-items: end;
+  -ms-align-items: end;
+  -o-align-items: end;
+  align-items: end;
+
+flex-row()
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -moz-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+flex-column()
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+flex-column-reverse()
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;

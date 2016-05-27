@@ -1,0 +1,3 @@
+.<%= componentName %> {
+  margin: 0 auto;
+}

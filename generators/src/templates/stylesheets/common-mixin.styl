@@ -1,0 +1,18 @@
+px2rem(val)
+  (val/75)rem
+
+dpr(property, small, normal, big)
+  [data-dpr="1"] &
+    {property}: unit(small, 'px');
+  [data-dpr="2"] &
+    {property}: unit(normal, 'px');
+  [data-dpr="3"] &
+    {property}: unit(big, 'px');
+
+setFontSize(small, normal, big)
+  [data-dpr="1"] &
+    font-size: unit(small, 'px');
+  [data-dpr="2"] &
+    font-size: unit(normal, 'px');
+  [data-dpr="3"] &
+    font-size: unit(big, 'px');
