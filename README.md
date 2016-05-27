@@ -13,7 +13,7 @@ npm install -g yo
 npm install -g generator-vue-app
 ```
 
->使用-g进行全局安装，在以后每次新建项目时不需再次安装，可直接创建项目
+>使用-g进行全局安装，在以后每次新建项目时不需再次安装，可直接创建项目。
 
 ### 3. 创建项目
 ```
@@ -51,10 +51,10 @@ npm run dev
 ```
 在浏览器上打开地址`localhost:8080`（端口可以修改），即可在页面上看到Hello Vue，同时进入开发阶段，修改文件并保存后页面会实时刷新。
 
->hello-vue组件只用做demo演示，实际开发时需要通过删除hello-vue目录删除该hello-vue组件。
+>1. hello-vue组件只用做demo演示，实际开发时需要通过删除hello-vue目录删除该hello-vue组件。
 
->有时运行该命令时会报如下错误：`Error: listen EADDRINUSE 127.0.0.1:8080`，遇到这种情况需要按照下面方法修改端口：
->修改`package.jso`文件内`scripts`字段的`dev`命令，找到`--port`，将其后面的`8080`改为其他端口，如`3000`
+>2. 有时运行该命令时会报如下错误：`Error: listen EADDRINUSE 127.0.0.1:8080`，遇到这种情况需要按照下面方法修改端口：
+>修改`package.jso`文件内`scripts`字段的`dev`命令，找到`--port`，将其后面的`8080`改为其他端口，如`3000`。
 
 ### 7. 编译打包
 ```
