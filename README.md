@@ -67,7 +67,7 @@ npm run buld
 ```
 yo vue-app:vue-component
 ```
-该命令会根据向导在src/javascripts/components/目录下创建相应组件。
+该命令会根据向导在`src/javascripts/components/`目录下创建相应组件。
 
 ## Getting To Know Yeoman
 
