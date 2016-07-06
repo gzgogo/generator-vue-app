@@ -58,7 +58,7 @@ module.exports = yeoman.Base.extend({
 
   writing: function () {
     var componentName = this.props.componentName;
-    var jsName = componentName + '.' + 'js';
+    var jsName = componentName + '.' + 'vue';
     var stylesheetName = componentName + '.' + this.props.stylesheetExtension;
     var jsFullPath = this.destinationPath(this.componentPath + "/" + componentName + '/' + jsName);
     var stylesheetFullPath = this.destinationPath(this.componentPath + "/" + componentName + '/' + stylesheetName);
