@@ -5,7 +5,8 @@
 <template>
   <div class="<%= componentName %>">
     <hello-vue></hello-vue>
-    <button type="button" @click="sayHello">{{name}}</button>
+    <button type="button" @click="changeName">{{name}}</button>
+    <div>{{msg}}</div>
   </div>
 </template>
 
@@ -19,6 +20,9 @@
       }
     },
 
+    created () {
+    },
+
     compiled () {
 
     },
@@ -26,9 +30,23 @@
     ready () {
     },
 
+    props: {
+      msg: {
+        type: String, //[String, Number, Object]
+        default: 'i am a prop from parent component'
+      }
+    },
+
+    watch: {
+      name (newVal, oldVal) {
+        console.log(oldVal + ' changed to ' + newVal);
+      }
+    },
+
     methods: {
-      sayHello() {
-        alert('Hello ' + this.name);
+      changeName() {
+        this.name = 'Jack';
+        alert('Name is changed to ' + this.name);
       }
     },
 
